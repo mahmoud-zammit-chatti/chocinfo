@@ -1525,3 +1525,31 @@ img { max-width: 100%; display: block; }
   border-color: var(--blue);
 }
 
+.product-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.product-detail-image-box {
+  font-size: 8rem;
+  padding: 80px 40px;
+  border-radius: 16px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .product-page-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .product-detail-image-box {
+    padding: 40px 20px;
+    font-size: 6rem;
+  }
+}

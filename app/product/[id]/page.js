@@ -56,9 +56,9 @@ export default function ProductDetailPage() {
           <span>{product.name}</span>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "start" }} className="product-page-layout">
+        <div className="product-page-layout">
           {/* Left: Product Image */}
-          <div className="product-detail-image" style={{ fontSize: "8rem", padding: "80px 40px", borderRadius: "16px", background: "var(--gray-50)", border: "1px solid var(--gray-200)" }}>
+          <div className="product-detail-image-box">
             {product.image}
           </div>
 
